@@ -1,4 +1,4 @@
-# mx-visualization-web
+# LargeScreenDisplay
 
 ## Project setup
 ```
