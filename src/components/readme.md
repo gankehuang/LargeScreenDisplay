@@ -1,0 +1,6 @@
+- Alert组件，是全局事件报警弹框
+- AMap组件，针对复杂地图的封装
+- SimpleMap组件，一般页面地图的封装
+- SvgIcon组件，对svg封装的组件
+- Dialog组件，全局弹框
+- InfoBlock组件，全局信息框、echarts容器块

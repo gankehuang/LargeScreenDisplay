@@ -1,0 +1,224 @@
+// global transition css
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+// 页面左侧右侧动画
+.ani-left-enter-active,
+.ani-left-leave-active,
+.ani-right-enter-active,
+.ani-right-leave-active {
+  transition: all 0.5s;
+}
+
+.ani-left-enter,
+.ani-left-leave-to {
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+.ani-right-enter,
+.ani-right-leave-to {
+  opacity: 0;
+  transform: translateX(200px);
+}
+
+// 弹窗动画
+.ani-popup-enter-active {
+  animation: popup-enter 0.2s linear;
+}
+
+.ani-popup-leave-active {
+  animation: popup-enter 0.2s reverse linear;
+}
+
+@keyframes popup-enter {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(0.2);
+  }
+  40% {
+    transform: scale(0.4);
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes flash {
+  0%,
+  25%,
+  100%,
+  75%,
+  50% {
+    opacity: 1;
+  }
+
+  37.5%,
+  12.5%,
+  62.5%,
+  87.5% {
+    opacity: 0;
+  }
+}
+
+@keyframes scaless {
+  0% {
+    transform: scale(1);
+  }
+
+  50%,
+  75% {
+    transform: scale(3);
+  }
+
+  78%,
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.twinkle {
+  position: absolute;
+  left: 30px;
+  width: 14px;
+  height: 14px;
+  background-color: #ff382f;
+  border-radius: 50%;
+}
+
+.twinkle:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  opacity: 0.7;
+  background-color: #ff3538;
+  animation: scaless 1s infinite cubic-bezier(0, 0, 0.49, 1.02);
+}
+
+.zz-twinkle {
+  position: absolute;
+  left: 30px;
+  width: 14px;
+  height: 14px;
+  background-color: #a9daff;
+  border-radius: 50%;
+}
+
+.zz-twinkle:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  opacity: 0.7;
+  background-color: #a9daff;
+  animation: scaless 1s infinite cubic-bezier(0, 0, 0.49, 1.02);
+}
+
+.sh-twinkle {
+  position: absolute;
+  left: 30px;
+  width: 14px;
+  height: 14px;
+  background-color: #00ffff;
+  border-radius: 50%;
+  border-radius: 50%;
+}
+
+.sh-twinkle:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  opacity: 0.7;
+  background-color: #00ffff;
+  animation: scaless 1s infinite cubic-bezier(0, 0, 0.49, 1.02);
+}
+
+.md-twinkle {
+  position: absolute;
+  left: 30px;
+  width: 14px;
+  height: 14px;
+  background-color: #0055ff;
+  border-radius: 50%;
+}
+
+.md-twinkle:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  opacity: 0.7;
+  background-color: #0055ff;
+  animation: scaless 1s infinite cubic-bezier(0, 0, 0.49, 1.02);
+}
+
+.gg-twinkle {
+  position: absolute;
+  left: 30px;
+  width: 14px;
+  height: 14px;
+  background-color: #e6b00e;
+  border-radius: 50%;
+}
+
+.gg-twinkle:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  opacity: 0.7;
+  background-color: #e6b00e;
+  animation: scaless 1s infinite cubic-bezier(0, 0, 0.49, 1.02);
+}
+
+.wl-twinkle {
+  position: absolute;
+  left: 30px;
+  width: 14px;
+  height: 14px;
+  background-color: #fe573b;
+  border-radius: 50%;
+}
+
+.wl-twinkle:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  opacity: 0.7;
+  background-color: #fe573b;
+  animation: scaless 1s infinite cubic-bezier(0, 0, 0.49, 1.02);
+}
+

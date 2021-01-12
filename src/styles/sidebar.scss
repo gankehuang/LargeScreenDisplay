@@ -1,0 +1,64 @@
+#app {
+  // 侧边栏页
+  .sidebar-container {
+    transition: width 0.28s;
+    width: 230px !important;
+    height: 100%;
+    background-color: #304156;
+
+    .svg-icon {
+      margin-right: 16px;
+    }
+  }
+
+  .openSidebar {
+    width: 230px !important;
+  }
+
+  .hideSidebar {
+    width: 54px !important;
+
+    .submenu-title-noDropdown {
+      padding: 0 !important;
+      position: relative;
+
+      .el-tooltip {
+        padding: 0 !important;
+
+        .svg-icon {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .el-submenu {
+      overflow: hidden;
+
+      & > .el-submenu__title {
+        padding: 0 !important;
+
+        .svg-icon {
+          margin-left: 20px;
+        }
+
+        .el-submenu__icon-arrow {
+          display: none;
+        }
+      }
+    }
+
+    .el-menu--collapse {
+      .el-submenu {
+        & > .el-submenu__title {
+          & > span {
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            visibility: hidden;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

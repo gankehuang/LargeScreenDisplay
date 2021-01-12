@@ -1,0 +1,29 @@
+.drop-menu-group-box {
+  width: 100%;
+  display: flex;
+}
+
+.drop-menu-btn {
+  width: 120px;
+  height: 30px;
+  color: #ffffff;
+  background: url('~@/assets/images/interviewAnalysis/left-btn-bg.png') no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.el-dropdown-width {
+  width: 80px;
+}
+
+.drop-menu-group-box, .drop-menu-btn, span {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.magrin-left-10 {
+  margin-left: 10px;
+}
